@@ -11,28 +11,24 @@ import "reveal.js/plugin/highlight/monokai.css";
 import "reveal.js/dist/reveal.css"
 import "reveal.js/dist/reset.css"
 import "reveal.js/dist/theme/black.css";
+
 import {Slide} from "./slide.tsx";
 import {PluralsSlide} from "./slides/plurals.tsx";
 import {InterpolationSlide} from "./slides/interpolation.tsx";
+import RevealHighlight from "reveal.js/plugin/highlight/highlight";
+import {TitleSlide} from "./slides/title.tsx";
 
 function App() {
     return <div className={Styles.root}>
         <RevealSlides controls={true}
                       hash={true}
                       controlsLayout={"bottom-right"}
-                      plugins={[RevealMarkdown, RevealZoom, RevealNotes]}
+                      plugins={[RevealMarkdown, RevealZoom, RevealNotes, RevealHighlight]}
                       center={false}
                       width={1920}
                       height={1080}
         >
-            <Slide>
-                <h1>i18n</h1>
-                <h3>Breaking the language barrier</h3>
-
-                <aside className="notes">
-                    Speaker notes go here
-                </aside>
-            </Slide>
+            <TitleSlide />
             <Slide>
                 <h1>i18n?</h1>
                 <div>Internationalisation</div>
@@ -42,14 +38,14 @@ function App() {
             </Slide>
             <InterpolationSlide />
             <PluralsSlide />
-            <Slide data-background-color="rgb(100, 0, 0)" data-background-transition="zoom">
+            <Slide data-background-color="rgb(100, 0, 0)">
                 <h1>Formats</h1>
                 <div className="fragment" style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
                     <span>Section 1</span>
                     <span>Section 2</span>
                 </div>
             </Slide>
-            <Slide data-background-color="rgb(100, 0, 0)" data-background-transition="zoom">
+            <Slide data-background-color="rgb(100, 0, 0)">
                 <h1>Some other things to think about</h1>
                 <ul>
                     <li className="fragment">Font support</li>

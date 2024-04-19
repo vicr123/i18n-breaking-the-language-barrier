@@ -1,28 +1,17 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import HttpApi from "i18next-http-backend";
 
-const resources = {
-    en: {
-        demo: {
-            "INTERPOLATION": "",
-            "EGG_one": "{{ count }} egg",
-            "EGG_other": "{{ count }} eggs"
+i18n.use(HttpApi)
+    .use(initReactI18next)
+    .init({
+        lng: "en",
+        preload: ["en", "nl", "fr"],
+        ns: ["slides", "demo"],
+        defaultNS: "slides",
+        backend: {
+            loadPath: "/translations/{{lng}}/{{ns}}.json"
         }
-    },
-    nl: {
-        demo: {
-            "INTERPOLATION": "",
-            "EGG_one": "{{ count }} ei",
-            "EGG_other": "{{ count }} eieren"
-        }
-    }
-}
-
-i18n.use(initReactI18next)
-.init({
-    resources: resources,
-    lng: "en",
-    ns: "demo"
-})
+    })
 
 export default i18n;

@@ -1,0 +1,9 @@
+.languageSwitcher {
+    display: flex;
+    gap: 60px;
+    font-size: 60pt;
+}
+
+.languageSwitcher span {
+    cursor: pointer;
+}

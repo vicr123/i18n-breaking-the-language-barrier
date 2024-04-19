@@ -1,0 +1,4 @@
+{
+  "BOOK_one": "{{ count }} livre",
+  "BOOK_other": "{{ count }} livres"
+}

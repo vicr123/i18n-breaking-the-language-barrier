@@ -1,0 +1,5 @@
+{
+  "INTERPOLATION": "Met {{ name }} heb ik de bug opgelost",
+  "BOOK_one": "{{ count }} boek",
+  "BOOK_other": "{{ count }} boek"
+}
