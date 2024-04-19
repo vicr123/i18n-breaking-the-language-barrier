@@ -20,7 +20,6 @@ export function DefaultSlide() {
             </div>
         </div>
 
-
         <aside className="notes">
             i18n: I[nternationalisatio]n
 

@@ -31,11 +31,15 @@ export function InterpolationSlide() {
         </section>
         <section>
             <h1>{t("INTERPOLATION")}</h1>
-            <pre>
-                <code data-trim={""} data-noescape={""} data-line-numbers={"2|3|4"}>
-                    {`<html></html>`}
-                </code>
-            </pre>
+            <div style={{display: "grid", gridTemplateColumns: "1fr"}}>
+                {["en", "nl", "pl"].map(lang => {
+                    return <pre>
+                        <code data-trim={""} data-noescape={""}>
+                            "INTERPOLATION": "{i18n.getResource(lang, "demo", "INTERPOLATION")}"
+                        </code>
+                    </pre>
+                })}
+            </div>
         </section>
     </Slide>
 }
