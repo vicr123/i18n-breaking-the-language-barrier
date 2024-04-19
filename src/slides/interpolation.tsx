@@ -7,6 +7,8 @@ export function InterpolationSlide() {
     const {t, i18n} = useTranslation();
     const [name, setName] = useState("");
 
+    const languages = ["en", "nl", "de", "ja"];
+
     return <Slide data-background-color="rgb(29, 83, 110)">
         <section>
             <h1>{t("INTERPOLATION")}</h1>
@@ -17,22 +19,33 @@ export function InterpolationSlide() {
             <div style={{display: "grid", gridTemplateColumns: "1fr"}}>
                 <input type={"text"} placeholder={t("NAME")} value={name} onChange={e => setName(e.target.value)}/>
 
-                {["en", "nl", "pl"].map(lang => {
+                {languages.map(lang => {
                     const t = i18n.getFixedT(lang, "demo");
 
                     return <div>
                         <p><LanguageIdentifier lang={lang}/></p>
-                        <Trans t={t} i18nKey={"INTERPOLATION"} values={{name: name}}>
-                            I fixed the bug with <span className={"highlight"}>Name</span>
-                        </Trans>
+                        <Trans t={t}
+                               i18nKey={"INTERPOLATION"}
+                               values={{name: name}}
+                               components={{
+                                   1: <span className={"highlight"}/>,
+                                   ruby: <ruby/>,
+                                   rp: <rp />,
+                                   rt: <rt />
+                               }}
+                        />
                     </div>
                 })}
             </div>
+
+            <aside className="notes" data-markdown={""}>
+                NAME-san to issho ni bagu o naoshimashita
+            </aside>
         </section>
         <section>
             <h1>{t("INTERPOLATION")}</h1>
             <div style={{display: "grid", gridTemplateColumns: "1fr"}}>
-                {["en", "nl", "pl"].map(lang => {
+            {languages.map(lang => {
                     return <pre>
                         <code data-trim={""} data-noescape={""}>
                             "INTERPOLATION": "{i18n.getResource(lang, "demo", "INTERPOLATION")}"

@@ -9,7 +9,7 @@ export function PluralsSlide() {
         <h1>{t("PLURALS")}</h1>
         <div data-fragment-index="2" className="fragment"
              style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr"}}>
-            {["en", "fr", "pl"].map(lang => {
+            {["en", "fr", "uk"].map(lang => {
                 const t = i18n.getFixedT(lang, "demo");
 
                 return <div>
@@ -21,12 +21,19 @@ export function PluralsSlide() {
                 </div>
             })}
 
-            <aside className="notes">
+            <aside className="notes" data-markdown={""}>
                 FR:
 
                 Zero livre
                 Une livre
                 Deux livre
+
+                UK: [knyh]
+                - Odna knyha
+                - Dvi knyhy
+                - Visim knyh
+                - Trydtsyat' pyat' knyh
+                - Nulʹ knyh
             </aside>
         </div>
     </Slide>

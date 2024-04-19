@@ -1,0 +1,5 @@
+{
+  "BOOK_one": "{{ count }} книга",
+  "BOOK_few": "{{ count }} книги",
+  "BOOK_many": "{{ count }} книг"
+}

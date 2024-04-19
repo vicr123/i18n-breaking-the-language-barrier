@@ -8,6 +8,8 @@ export function LanguageIdentifier({lang}: {
 
     const flag = useMemo(() => {
         if (lang == "en") return "🇬🇧";
+        if (lang == "uk") return "🇺🇦";
+        if (lang == "ja") return "🇯🇵";
 
         const codePoints = lang
             .toUpperCase()
