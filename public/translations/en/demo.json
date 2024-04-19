@@ -1,5 +1,5 @@
 {
-  "INTERPOLATION": "I fixed the bug with {{ name }}",
+  "INTERPOLATION": "I fixed the bug with <1>{{ name }}</1>",
   "BOOK_one": "{{ count }} book",
   "BOOK_other": "{{ count }} books"
 }

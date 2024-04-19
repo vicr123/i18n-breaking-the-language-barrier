@@ -1,4 +1,4 @@
-import {useTranslation} from "react-i18next";
+import {Trans, useTranslation} from "react-i18next";
 import {Slide} from "../slide.tsx";
 import {LanguageIdentifier} from "../languageIdentifier.tsx";
 import {useState} from "react";
@@ -7,7 +7,7 @@ export function InterpolationSlide() {
     const {t, i18n} = useTranslation();
     const [name, setName] = useState("");
 
-    return <Slide data-background-color="rgb(100, 0, 0)">
+    return <Slide data-background-color="rgb(29, 83, 110)">
         <section>
             <h1>{t("INTERPOLATION")}</h1>
             <p>{t("INTERPOLATION_INTRODUCTION")}</p>
@@ -22,7 +22,9 @@ export function InterpolationSlide() {
 
                     return <div>
                         <p><LanguageIdentifier lang={lang}/></p>
-                        <p>{t("INTERPOLATION", {name: name})}</p>
+                        <Trans t={t} i18nKey={"INTERPOLATION"} values={{name: name}}>
+                            I fixed the bug with <span className={"highlight"}>Name</span>
+                        </Trans>
                     </div>
                 })}
             </div>

@@ -1,0 +1,31 @@
+.i18nBox {
+    display: block;
+    padding: 40px;
+    background-color: #DDDDDD;
+    color: black;
+
+    position: absolute;
+
+    font-family: serif;
+    font-style: italic;
+    letter-spacing: 10px;
+}
+
+.i18n18 {
+    text-decoration: underline;
+}
+
+.i18nGrid {
+    display: grid;
+    grid-template-columns: repeat(20, max-content);
+    grid-template-rows: repeat(3, max-content);
+}
+
+.i18nCounter {
+    grid-column: span 18;
+    place-self: center;
+
+    font-family: Inter, sans-serif;
+    letter-spacing: unset;
+    font-size: 20pt;
+}

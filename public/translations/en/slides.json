@@ -1,6 +1,8 @@
 {
   "I18N": "i18n",
   "I18N_SUBTITLE": "Breaking the language barrier",
+  "I18N_QUESTION_MARK": "i18n?",
+  "I18N_WHAT_IS_I18N": "What is i18n?",
   "NAME": "Name",
   "INTERPOLATION": "Interpolation",
   "INTERPOLATION_INTRODUCTION": "Text goes here",

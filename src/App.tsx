@@ -17,6 +17,7 @@ import {PluralsSlide} from "./slides/plurals.tsx";
 import {InterpolationSlide} from "./slides/interpolation.tsx";
 import RevealHighlight from "reveal.js/plugin/highlight/highlight";
 import {TitleSlide} from "./slides/title.tsx";
+import {DefaultSlide} from "./slides/intro.tsx";
 
 function App() {
     return <div className={Styles.root}>
@@ -29,10 +30,7 @@ function App() {
                       height={1080}
         >
             <TitleSlide />
-            <Slide>
-                <h1>i18n?</h1>
-                <div>Internationalisation</div>
-            </Slide>
+            <DefaultSlide />
             <Slide data-background-color="rgb(100, 0, 0)" data-background-transition="zoom">
                 <h1>Language is nuanced</h1>
             </Slide>
@@ -49,13 +47,14 @@ function App() {
                 <h1>Some other things to think about</h1>
                 <ul>
                     <li className="fragment">Font support</li>
+                    <li className="fragment">Sizing and designs</li>
                     <li className="fragment">Icons</li>
                     <li className="fragment">Bidirectionality</li>
                 </ul>
             </Slide>
-            <Slide data-background-color="rgb(0, 100, 200)" data-background-transition="zoom">
-                <h1>A library</h1>
-                <p className="fragment">Fragment</p>
+            <Slide>
+                <h1>Go forth and translate!</h1>
+                <p>A CTA for the folks that speak multiple languages</p>
             </Slide>
             <Slide>
                 <h1>Questions?</h1>
