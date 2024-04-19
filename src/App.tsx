@@ -18,6 +18,10 @@ import {InterpolationSlide} from "./slides/interpolation.tsx";
 import RevealHighlight from "reveal.js/plugin/highlight/highlight";
 import {TitleSlide} from "./slides/title.tsx";
 import {DefaultSlide} from "./slides/intro.tsx";
+import {QuestionsSlide} from "./slides/questions.tsx";
+import {I18nextSlide} from "./slides/i18next.tsx";
+import { FormatsSlide } from "./slides/formats.tsx";
+import {CtaSlide} from "./slides/cta.tsx";
 
 function App() {
     return <div className={Styles.root}>
@@ -34,15 +38,10 @@ function App() {
             <Slide data-background-color="rgb(100, 0, 0)" data-background-transition="zoom">
                 <h1>Language is nuanced</h1>
             </Slide>
+            <I18nextSlide />
             <InterpolationSlide />
             <PluralsSlide />
-            <Slide data-background-color="rgb(100, 0, 0)">
-                <h1>Formats</h1>
-                <div className="fragment" style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
-                    <span>Section 1</span>
-                    <span>Section 2</span>
-                </div>
-            </Slide>
+            <FormatsSlide />
             <Slide data-background-color="rgb(100, 0, 0)">
                 <h1>Some other things to think about</h1>
                 <ul>
@@ -52,13 +51,8 @@ function App() {
                     <li className="fragment">Bidirectionality</li>
                 </ul>
             </Slide>
-            <Slide>
-                <h1>Go forth and translate!</h1>
-                <p>A CTA for the folks that speak multiple languages</p>
-            </Slide>
-            <Slide>
-                <h1>Questions?</h1>
-            </Slide>
+            <CtaSlide />
+            <QuestionsSlide />
         </RevealSlides>
     </div>
 }

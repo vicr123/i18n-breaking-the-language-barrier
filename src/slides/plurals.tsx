@@ -15,7 +15,7 @@ export function PluralsSlide() {
                 return <div>
                     <p><LanguageIdentifier lang={lang}/></p>
 
-                    {[0, 1, 2, 3, 5, 6].map(n => {
+                    {[1, 2, 8, 35, 0].map(n => {
                         return <p>{t("BOOK", {count: n})}</p>
                     })}
                 </div>
