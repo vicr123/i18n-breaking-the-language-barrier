@@ -10,6 +10,7 @@ export function LanguageIdentifier({lang}: {
         if (lang == "en") return "🇬🇧";
         if (lang == "uk") return "🇺🇦";
         if (lang == "ja") return "🇯🇵";
+        if (lang == "he") return "🇮🇱";
 
         const codePoints = lang
             .toUpperCase()
@@ -22,5 +23,5 @@ export function LanguageIdentifier({lang}: {
         type: "language"
     });
 
-    return `${flag} ${displayNames.of(lang)}`;
+    return <span dir={i18n.dir()}>{flag} {displayNames.of(lang)}</span>;
 }

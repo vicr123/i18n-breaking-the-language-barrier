@@ -22,9 +22,14 @@ import {QuestionsSlide} from "./slides/questions.tsx";
 import {I18nextSlide} from "./slides/i18next.tsx";
 import { FormatsSlide } from "./slides/formats.tsx";
 import {CtaSlide} from "./slides/cta.tsx";
+import {BidiSlide} from "./slides/bidi.tsx";
+import {ConclusionSlide} from "./slides/conclusion.tsx";
+import {useTranslation} from "react-i18next";
 
 function App() {
-    return <div className={Styles.root}>
+    const {i18n} = useTranslation();
+
+    return <div className={Styles.root} dir={i18n.dir()}>
         <RevealSlides controls={true}
                       hash={true}
                       controlsLayout={"bottom-right"}
@@ -32,6 +37,7 @@ function App() {
                       center={false}
                       width={1920}
                       height={1080}
+                      rtl={i18n.dir() == "rtl"}
         >
             <TitleSlide />
             <DefaultSlide />
@@ -42,16 +48,19 @@ function App() {
             <InterpolationSlide />
             <PluralsSlide />
             <FormatsSlide />
+            <BidiSlide />
             <Slide data-background-color="rgb(100, 0, 0)">
                 <h1>Some other things to think about</h1>
                 <ul>
                     <li className="fragment">Font support</li>
                     <li className="fragment">Sizing and designs</li>
                     <li className="fragment">Icons</li>
-                    <li className="fragment">Bidirectionality</li>
+                    <li className="fragment">Eastern Arabic numbers</li>
+                {/*  If I do a slide on numbers we'll talk about the comma too  */}
                 </ul>
             </Slide>
-            <CtaSlide />
+            <CtaSlide/>
+            <ConclusionSlide />
             <QuestionsSlide />
         </RevealSlides>
     </div>

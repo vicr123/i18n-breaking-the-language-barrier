@@ -2,3 +2,7 @@
     text-align: left;
     padding-top: 150px;
 }
+
+:dir(rtl) .slide {
+    text-align: right;
+}
