@@ -24,7 +24,7 @@ export function BidiSlide() {
             <InterpolationPart languages={["en", "he"]}/>
 
             <aside className="notes" data-markdown={""}>
-                beyahad im NAME tikanti et habag
+                be'ezrat NAME tikanti et habag
                 A is always short A
             </aside>
         </Slide>

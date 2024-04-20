@@ -8,8 +8,6 @@ import RevealZoom from 'reveal.js/plugin/zoom/zoom';
 import RevealMarkdown from "reveal.js/plugin/markdown/markdown";
 
 import "reveal.js/plugin/highlight/monokai.css";
-import "reveal.js/dist/reveal.css"
-import "reveal.js/dist/reset.css"
 import "reveal.js/dist/theme/black.css";
 
 import {Slide} from "./slide.tsx";

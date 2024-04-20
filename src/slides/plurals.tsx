@@ -8,15 +8,26 @@ export function PluralsSlide() {
     return <Slide data-background-color="rgb(29, 83, 110)">
         <Slide>
             <h1>{t("PLURALS")}</h1>
+            <p>Plural rules differ between languages</p>
+            <pre>
+                <code data-trim={""} data-noescape={""} data-line-numbers="2">
+                    {`function numberOfBooks(books) {
+                        if (books == 1) {
+                            return \`1 book\`;
+                        } else {
+                            return \`\${books} books\`;
+                        }
+                    }`}
+                </code>
+            </pre>
         </Slide>
         <Slide>
             <h1>{t("PLURALS")}</h1>
-            <div data-fragment-index="2" className="fragment"
-                 style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr"}}>
+            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr"}}>
                 {["en", "fr", "uk"].map(lang => {
                     const t = i18n.getFixedT(lang, "demo");
 
-                    return <div dir={i18n.dir(lang)}>
+                    return <div className={"fragment"} dir={i18n.dir(lang)}>
                         <p><LanguageIdentifier lang={lang}/></p>
 
                         {[1, 2, 8, 35, 0].map(n => {

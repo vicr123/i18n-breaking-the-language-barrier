@@ -20,7 +20,7 @@ export function InterpolationPart({languages}: {
                     <p><LanguageIdentifier lang={lang}/></p>
                     <Trans t={t}
                            i18nKey={"INTERPOLATION"}
-                           values={{name: name}}
+                           values={{name: name || "\u2003"}}
                            components={{
                                1: <span className={"highlight"}/>,
                                ruby: <ruby/>,
