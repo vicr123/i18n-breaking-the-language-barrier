@@ -23,6 +23,7 @@ import {CtaSlide} from "./slides/cta.tsx";
 import {BidiSlide} from "./slides/bidi.tsx";
 import {ConclusionSlide} from "./slides/conclusion.tsx";
 import {useTranslation} from "react-i18next";
+import {TranslatingTextSlide} from "./slides/translatingText.tsx";
 
 function App() {
     const {i18n} = useTranslation();
@@ -44,6 +45,8 @@ function App() {
                 <p>A library will assist you with some of the more common aspects of i18n.</p>
             </Slide>
             <I18nextSlide />
+
+            <TranslatingTextSlide />
             <InterpolationSlide />
             <PluralsSlide />
             <FormatsSlide />
@@ -58,6 +61,7 @@ function App() {
                 {/*  If I do a slide on numbers we'll talk about the comma too  */}
                 </ul>
             </Slide>
+
             <CtaSlide/>
             <ConclusionSlide />
             <QuestionsSlide />

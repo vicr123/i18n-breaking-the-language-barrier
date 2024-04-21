@@ -8,7 +8,7 @@ export function InterpolationPart({languages}: {
     languages: string[]
 }) {
     const {t, i18n} = useTranslation();
-    const [name, setName] = useState("");
+    const [name, setName] = useState("Alex");
 
     return <div style={{display: "grid", gridTemplateColumns: "1fr"}}>
         <input type={"text"} placeholder={t("NAME")} value={name} onChange={e => setName(e.target.value)}/>

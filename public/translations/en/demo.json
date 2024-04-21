@@ -1,5 +1,13 @@
 {
   "INTERPOLATION": "With the help of <1>{{ name }}</1>, I fixed the bug",
   "BOOK_one": "{{ count }} book",
-  "BOOK_other": "{{ count }} books"
+  "BOOK_other": "{{ count }} books",
+  "FIND_A_PROPERTY": "Find a property",
+  "APP_PRICE": "Price",
+  "APP_PRICE_UPPER_BOUND": "Up to {{ price }}",
+  "APP_BEDROOMS": "Bedrooms",
+  "APP_BATHROOMS": "Bathrooms",
+  "APP_GARAGE": "Garage spaces",
+  "APP_NUMERIC_FILTER": "From <1/> to <2/>",
+  "APP_SEARCH": "Search"
 }
