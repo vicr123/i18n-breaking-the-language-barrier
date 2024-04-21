@@ -4,7 +4,6 @@
   "BOOK_other": "{{ count }} books",
   "FIND_A_PROPERTY": "Find a property",
   "APP_PRICE": "Price",
-  "APP_PRICE_UPPER_BOUND": "Up to {{ price }}",
   "APP_BEDROOMS": "Bedrooms",
   "APP_BATHROOMS": "Bathrooms",
   "APP_GARAGE": "Garage spaces",

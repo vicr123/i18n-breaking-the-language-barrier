@@ -4,6 +4,10 @@
     gap: 20px;
 }
 
+.split div:first-child {
+    display: grid;
+}
+
 .appRoot {
     color: black;
     background-color: #EEEEEE;

@@ -1,6 +1,7 @@
 import {useTranslation} from "react-i18next";
 import {Slide} from "../slide.tsx";
 import {InterpolationPart} from "../components/InterpolationPart.tsx";
+import {CodeBlock} from "../components/codeblock.tsx";
 
 export function InterpolationSlide() {
     const {t, i18n} = useTranslation();
@@ -11,11 +12,8 @@ export function InterpolationSlide() {
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
             <p>{t("INTERPOLATION_INTRODUCTION")}</p>
-            <pre>
-                <code data-trim={""} data-noescape={""}>
-                    {JSON.stringify(i18n.getResourceBundle(i18n.language, "slides"), null, 4)}
-                </code>
-            </pre>
+
+            <CodeBlock code={i18n.getResourceBundle(i18n.language, "slides")} />
         </Slide>
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
