@@ -10,10 +10,13 @@
   "I18NEXT_DESCRIPTION_2": "Even if you end up deciding not to use i18next for your project, some of the upcoming ideas will still be relevant!",
   "TRANSLATING_TEXT": "Translating Text",
   "INTERPOLATION": "Interpolation",
-  "INTERPOLATION_INTRODUCTION": "Text goes here",
+  "INTERPOLATION_INTRODUCTION": "But what about user-generated or dynamic text?",
   "PLURALS": "Plurals",
   "FORMATS": "Formats",
   "BIDIRECTIONALITY": "Bidirectionality",
   "FINAL_SLIDE_TITLE": "Conclusion",
+  "VIEW_SLIDES_ONLINE": "View these slides online",
+  "VIEW_GITHUB_SOURCE": "View the source code for these slides",
+  "VIEW_I18NEXT": "Learn more about i18next",
   "QUESTIONS": "Questions?"
 }

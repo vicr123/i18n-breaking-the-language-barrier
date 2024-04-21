@@ -7,7 +7,7 @@ export function CodeBlock({code, lineNumbers}: {
         render = JSON.stringify(render, null, 4);
     }
 
-    return <pre>
+    return <pre style={{maxWidth: "100%"}}>
         <code data-trim={""} data-noescape={""} data-line-numbers={lineNumbers}>
             {render}
         </code>

@@ -17,6 +17,10 @@ export function TitleSlide() {
             <span onClick={() => i18n.changeLanguage("he")}>🇮🇱</span>
         </div>
 
+        <div className={Styles.links}>
+            <a href={"https://github.com/vicr123/i18n-breaking-the-language-barrier"} target={"_blank"}><img src={"/github-mark-white.svg"} alt={"GitHub"} className={Styles.github} /></a>
+        </div>
+
         <aside className="notes">
             Speaker notes go here
         </aside>

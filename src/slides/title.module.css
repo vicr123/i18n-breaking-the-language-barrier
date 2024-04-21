@@ -7,3 +7,17 @@
 .languageSwitcher span {
     cursor: pointer;
 }
+
+.links {
+    position: absolute;
+    top: 980px;
+    height: 80px;
+}
+
+.github {
+    opacity: 0.5;
+}
+
+.github:hover {
+    opacity: 1;
+}

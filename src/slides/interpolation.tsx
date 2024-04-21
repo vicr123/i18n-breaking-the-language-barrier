@@ -12,8 +12,6 @@ export function InterpolationSlide() {
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
             <p>{t("INTERPOLATION_INTRODUCTION")}</p>
-
-            <CodeBlock code={i18n.getResourceBundle(i18n.language, "slides")} />
         </Slide>
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
@@ -25,15 +23,10 @@ export function InterpolationSlide() {
         </Slide>
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
-            <div style={{display: "grid", gridTemplateColumns: "1fr"}}>
+            <p>Translation strings:</p>
             {languages.map(lang => {
-                    return <pre>
-                        <code data-trim={""} data-noescape={""}>
-                            "INTERPOLATION": "{i18n.getResource(lang, "demo", "INTERPOLATION")}"
-                        </code>
-                    </pre>
+                    return <CodeBlock code={`"INTERPOLATION": "${i18n.getResource(lang, "demo", "INTERPOLATION")}"`} />
                 })}
-            </div>
         </Slide>
     </Slide>
 }
