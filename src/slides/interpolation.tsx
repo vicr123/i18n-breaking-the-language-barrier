@@ -11,6 +11,11 @@ export function InterpolationSlide() {
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
             <p>{t("INTERPOLATION_INTRODUCTION")}</p>
+            <pre>
+                <code data-trim={""} data-noescape={""}>
+                    {JSON.stringify(i18n.getResourceBundle(i18n.language, "slides"), null, 4)}
+                </code>
+            </pre>
         </Slide>
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>

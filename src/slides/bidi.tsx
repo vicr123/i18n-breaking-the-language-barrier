@@ -28,5 +28,10 @@ export function BidiSlide() {
                 A is always short A
             </aside>
         </Slide>
+        <Slide>
+            <h1>{t("BIDIRECTIONALITY")}</h1>
+
+            &lt; Back              Back &gt;
+        </Slide>
     </Slide>
 }

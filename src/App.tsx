@@ -15,7 +15,7 @@ import {PluralsSlide} from "./slides/plurals.tsx";
 import {InterpolationSlide} from "./slides/interpolation.tsx";
 import RevealHighlight from "reveal.js/plugin/highlight/highlight";
 import {TitleSlide} from "./slides/title.tsx";
-import {DefaultSlide} from "./slides/intro.tsx";
+import {IntroSlide} from "./slides/intro.tsx";
 import {QuestionsSlide} from "./slides/questions.tsx";
 import {I18nextSlide} from "./slides/i18next.tsx";
 import { FormatsSlide } from "./slides/formats.tsx";
@@ -38,9 +38,10 @@ function App() {
                       rtl={i18n.dir() == "rtl"}
         >
             <TitleSlide />
-            <DefaultSlide />
+            <IntroSlide />
             <Slide data-background-color="rgb(100, 0, 0)" data-background-transition="zoom">
                 <h1>Language is nuanced</h1>
+                <p>A library will assist you with some of the more common aspects of i18n.</p>
             </Slide>
             <I18nextSlide />
             <InterpolationSlide />

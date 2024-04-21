@@ -3,6 +3,7 @@
   "I18N_SUBTITLE": "Breaking the language barrier",
   "I18N_QUESTION_MARK": "i18n?",
   "I18N_WHAT_IS_I18N": "What is i18n?",
+  "I18N_SHORTENED_COUNT": "18 characters",
   "NAME": "Name",
   "I18NEXT_TITLE": "i18next - a JS translation library",
   "I18NEXT_DESCRIPTION": "During these slides, I will make references to code using the i18next translation library.",

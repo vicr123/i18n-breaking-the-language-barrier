@@ -3,7 +3,7 @@ import {useTranslation} from "react-i18next";
 
 import Styles from "./intro.module.css";
 
-export function DefaultSlide() {
+export function IntroSlide() {
     const {t} = useTranslation();
 
     return <Slide>
@@ -16,9 +16,11 @@ export function DefaultSlide() {
                 <div style={{gridColumn: "span 18", height: "5px", background: "black"}}/>
                 <span/>
                 <span/>
-                <div className={Styles.i18nCounter}>18 characters</div>
+                <div className={Styles.i18nCounter}>{t("I18N_SHORTENED_COUNT")}</div>
             </div>
         </div>
+
+        <p className={"fragment"}>And what is internationalisation?</p>
 
         <aside className="notes">
             i18n: I[nternationalisatio]n
