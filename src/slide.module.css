@@ -1,6 +1,7 @@
 .slide {
     text-align: left;
     padding-top: 150px;
+    box-sizing: border-box;
 }
 
 :dir(rtl) .slide {

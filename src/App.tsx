@@ -28,6 +28,14 @@ import {TranslatingTextSlide} from "./slides/translatingText.tsx";
 function App() {
     const {i18n} = useTranslation();
 
+    // Override keyboard controls so that it is possible to go through all the slides using a presentation remote
+    const keyboard = {
+        // Override left arrow key to always go to the previous slide (even vertically)
+        37: "prev",
+        // Override right arrow key to always go to the next slide (even vertically)
+        39: "next"
+    };
+
     return <div className={Styles.root} dir={i18n.dir()}>
         <RevealSlides controls={true}
                       hash={true}
@@ -37,6 +45,8 @@ function App() {
                       width={1920}
                       height={1080}
                       rtl={i18n.dir() == "rtl"}
+                      // @ts-expect-error
+                      keyboard={keyboard}
         >
             <TitleSlide />
             <IntroSlide />
