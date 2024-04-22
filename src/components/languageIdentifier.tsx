@@ -7,12 +7,17 @@ export function LanguageIdentifier({lang}: {
     const {i18n} = useTranslation();
 
     const flag = useMemo(() => {
-        if (lang == "en") return "🇬🇧";
-        if (lang == "uk") return "🇺🇦";
-        if (lang == "ja") return "🇯🇵";
-        if (lang == "he") return "🇮🇱";
+        if (lang.length != 5) {
+            if (lang == "en") return "🇬🇧";
+            if (lang == "uk") return "🇺🇦";
+            if (lang == "ja") return "🇯🇵";
+            if (lang == "he") return "🇮🇱";
+        }
 
-        const codePoints = lang
+        let flag = lang;
+        if (lang.length == 5) flag = lang.substring(3);
+
+        const codePoints = flag
             .toUpperCase()
             .split('')
             .map(char =>  127397 + char.charCodeAt(0));

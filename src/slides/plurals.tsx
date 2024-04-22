@@ -1,6 +1,6 @@
 import {Slide} from "../slide.tsx";
 import {useTranslation} from "react-i18next";
-import {LanguageIdentifier} from "../languageIdentifier.tsx";
+import {LanguageIdentifier} from "../components/languageIdentifier.tsx";
 import {CodeBlock} from "../components/codeblock.tsx";
 
 import PluralsBadExample from "../examples/plurals-bad.js?raw"

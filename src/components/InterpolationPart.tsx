@@ -1,4 +1,4 @@
-import {LanguageIdentifier} from "../languageIdentifier.tsx";
+import {LanguageIdentifier} from "./languageIdentifier.tsx";
 import {Trans, useTranslation} from "react-i18next";
 import {useState} from "react";
 
