@@ -21,9 +21,11 @@ export function BidiSlide() {
         <Slide>
             <h1>{t("BIDIRECTIONALITY")}</h1>
 
-            <InterpolationPart languages={["en", "he"]}/>
+            <InterpolationPart languages={["en", "ar", "he"]}/>
 
             <aside className="notes" data-markdown={""}>
+                bimusaeadat NAME salah'at alkhalal albarmaji
+
                 be'ezrat NAME tikanti et habag
                 A is always short A
             </aside>

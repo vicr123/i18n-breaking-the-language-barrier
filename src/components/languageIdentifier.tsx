@@ -12,6 +12,7 @@ export function LanguageIdentifier({lang}: {
             if (lang == "uk") return "🇺🇦";
             if (lang == "ja") return "🇯🇵";
             if (lang == "he") return "🇮🇱";
+            if (lang == "ar") return "🇸🇦";
         }
 
         let flag = lang;
