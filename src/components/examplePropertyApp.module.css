@@ -1,0 +1,73 @@
+.appRoot {
+    color: black;
+    background-color: #EEEEEE;
+
+    height: 700px;
+    width: 500px;
+
+    place-self: center;
+
+    display: grid;
+    grid-template-areas: "header"
+                         "content"
+                         "footer";
+    grid-template-rows: max-content 1fr;
+
+    font-size: 20pt;
+}
+
+.appRoot:dir(rtl) {
+    text-align: right;
+}
+
+.appHeader {
+    grid-area: header;
+    font-size: 30pt;
+    padding: 60px 10px 10px;
+
+    color: white;
+    background-color: rebeccapurple;
+}
+
+.appContent {
+    grid-area: content;
+}
+
+.appFilter {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.appFooter {
+    grid-area: footer;
+    padding: 10px;
+}
+
+.appFooter button {
+    background: rebeccapurple;
+    width: 100%;
+    padding: 5px;
+}
+
+.appValue {
+    font-size: 15pt;
+}
+
+.appNumericFilter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 15pt;
+}
+
+.appNumericFilter input {
+    width: 100px;
+    background: white;
+    color: black;
+    border: none;
+
+    font-size: 15pt;
+}

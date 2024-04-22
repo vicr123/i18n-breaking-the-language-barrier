@@ -1,3 +1,10 @@
 {
-  "INTERPOLATION": "בעזרת <1>{{ name }}</1> תיקנתי את הבאג"
+  "INTERPOLATION": "בעזרת <1>{{ name }}</1> תיקנתי את הבאג",
+  "FIND_A_PROPERTY": "חפש נכסים",
+  "APP_PRICE": "מחיר",
+  "APP_NUMERIC_FILTER": "מ-<1/> ל-<2/>",
+  "APP_BEDROOMS": "חדרי שינה",
+  "APP_BATHROOMS": "חדרי אמבטיה",
+  "APP_GARAGE": "מוסכים",
+  "APP_SEARCH": "חפש"
 }

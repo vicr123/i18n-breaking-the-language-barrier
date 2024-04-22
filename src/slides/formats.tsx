@@ -50,7 +50,7 @@ export function FormatsSlide() {
         <Slide>
             <h1>{t("FORMATS")}</h1>
             <div className={`${Styles.formatsTable} fragment`}>
-                {["en-AU", "en-GB", "en-US", "ja-JP", "vi-VN", "ar-SA"].map(lang => <Fragment key={lang}>
+                {["en-AU", "en-GB", "en-US", "en-CA", "ja-JP", "vi-VN", "ar-SA"].map(lang => <Fragment key={lang}>
                     <LanguageIdentifier lang={lang}/>
                     <span>{now.setLocale(lang).toLocaleString(longFormat)}</span>
                     <span>{now.setLocale(lang).toLocaleString(shortFormat)}</span>
