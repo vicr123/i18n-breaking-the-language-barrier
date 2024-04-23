@@ -1,5 +1,6 @@
 {
   "INTERPOLATION": "Ik heb de bug opgelost met de hulp van <1>{{ name }}</1>",
+  "INTERPOLATION_2": "Kopiëren van \"<1>{{ source }}</1>\" naar \"<1>{{ destination }}</1>\" mislukt",
   "BOOK_one": "{{ count }} boek",
   "BOOK_other": "{{ count }} boek"
 }

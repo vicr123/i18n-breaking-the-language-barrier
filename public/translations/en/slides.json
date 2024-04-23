@@ -12,6 +12,8 @@
   "INTERPOLATION": "Interpolation",
   "INTERPOLATION_INTRODUCTION": "But what about user-generated or dynamic text?",
   "PLURALS": "Plurals",
+  "PLURAL_INCORRECT_EXPLANATION": "Don't use different keys to interpolate counting numbers",
+  "PLURAL_CORRECT_EXPLANATION": "Use one key and allow the i18n library to select the best translation",
   "FORMATS": "Formats",
   "FORMATS_QUESTION_FIRST_DAY_OF_WEEK": "What's the first day of the week?",
   "BIDIRECTIONALITY": "Bidirectionality",
@@ -19,5 +21,7 @@
   "VIEW_SLIDES_ONLINE": "View these slides online",
   "VIEW_GITHUB_SOURCE": "View the source code for these slides",
   "VIEW_I18NEXT": "Learn more about i18next",
-  "QUESTIONS": "Questions?"
+  "QUESTIONS": "Questions?",
+  "USAGE_INCORRECT": "Incorrect",
+  "USAGE_CORRECT": "Correct"
 }

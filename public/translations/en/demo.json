@@ -1,5 +1,6 @@
 {
   "INTERPOLATION": "With the help of <1>{{ name }}</1>, I fixed the bug",
+  "INTERPOLATION_2": "Unable to copy \"<1>{{ source }}</1>\" to \"<1>{{ destination }}</1>\"",
   "BOOK_one": "{{ count }} book",
   "BOOK_other": "{{ count }} books",
   "FIND_A_PROPERTY": "Find a property",

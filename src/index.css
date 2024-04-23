@@ -80,3 +80,8 @@ input {
 .reveal {
   opacity: 1 !important;
 }
+
+.reveal pre {
+  width: unset;
+  margin: 0;
+}
