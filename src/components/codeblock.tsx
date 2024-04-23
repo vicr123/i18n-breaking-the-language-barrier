@@ -9,7 +9,9 @@ export function CodeBlock({code, lineNumbers}: {
 
     return <pre style={{maxWidth: "100%"}}>
         <code data-trim={""} data-noescape={""} data-line-numbers={lineNumbers}>
-            {render}
+            <script type="text/template">
+                {render}
+            </script>
         </code>
     </pre>
 }

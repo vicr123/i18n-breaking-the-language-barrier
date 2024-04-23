@@ -4,6 +4,8 @@ import {useTranslation} from "react-i18next";
 import Styles from "./translatingText.module.css";
 import {CodeBlock} from "../components/codeblock.tsx";
 import {ExamplePropertyApp} from "../components/examplePropertyApp.tsx";
+import {LanguageIdentifier} from "../components/languageIdentifier.tsx";
+import ExamplePropertyAppSource from "../components/examplePropertyApp.tsx?raw";
 
 export function TranslatingTextSlide() {
     const {t, i18n} = useTranslation();
@@ -40,6 +42,31 @@ export function TranslatingTextSlide() {
                     </div>
                 </div>
             </div>
+        </Slide>
+        <Slide>
+            <h1>{t("TRANSLATING_TEXT")}</h1>
+            <CodeBlock code={ExamplePropertyAppSource} lineNumbers={"12,16,21"} />
+        </Slide>
+        <Slide>
+            <h1>{t("TRANSLATING_TEXT")}</h1>
+            {["en", "vi"].map(lang => {
+                const t = i18n.getFixedT(lang, "demo");
+                return <>
+                    <LanguageIdentifier lang={lang} />
+                    <div className={Styles.split}>
+                        <div>
+                            <div>{t("FIND_A_PROPERTY", {ns: "demo"})}</div>
+                            <div>{t("APP_PRICE", {ns: "demo"})}</div>
+                            <div>{t("APP_GARAGE", {ns: "demo"})}</div>
+                        </div>
+                        <div>
+                            <CodeBlock code={`t("FIND_A_PROPERTY")`} />
+                            <CodeBlock code={`t("APP_PRICE")`} />
+                            <CodeBlock code={`t("APP_GARAGE")`} />
+                        </div>
+                    </div>
+                </>
+            })}
         </Slide>
     </Slide>
 }

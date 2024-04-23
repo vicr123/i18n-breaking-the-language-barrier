@@ -24,6 +24,7 @@ import {BidiSlide} from "./slides/bidi.tsx";
 import {ConclusionSlide} from "./slides/conclusion.tsx";
 import {useTranslation} from "react-i18next";
 import {TranslatingTextSlide} from "./slides/translatingText.tsx";
+import {PluginFunction} from "reveal.js";
 
 function App() {
     const {i18n} = useTranslation();
@@ -36,11 +37,19 @@ function App() {
         39: "next"
     };
 
+    const hl: PluginFunction = () => {
+        const hl = RevealHighlight();
+        return {
+            ...hl,
+            highlight: "highlightPatch"
+        }
+    };
+
     return <div className={Styles.root} dir={i18n.dir()}>
         <RevealSlides controls={true}
                       hash={true}
                       controlsLayout={"bottom-right"}
-                      plugins={[RevealMarkdown, RevealZoom, RevealNotes, RevealHighlight]}
+                      plugins={[RevealMarkdown, RevealZoom, RevealNotes, hl]}
                       center={false}
                       width={1920}
                       height={1080}
