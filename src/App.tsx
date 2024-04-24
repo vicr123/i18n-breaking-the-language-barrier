@@ -10,24 +10,25 @@ import RevealMarkdown from "reveal.js/plugin/markdown/markdown";
 import "reveal.js/plugin/highlight/monokai.css";
 import "reveal.js/dist/theme/black.css";
 
-import {Slide} from "./slide.tsx";
-import {PluralsSlide} from "./slides/plurals.tsx";
-import {InterpolationSlide} from "./slides/interpolation.tsx";
+import { Slide } from "./slide.tsx";
+import { PluralsSlide } from "./slides/plurals.tsx";
+import { InterpolationSlide } from "./slides/interpolation.tsx";
 import RevealHighlight from "reveal.js/plugin/highlight/highlight";
-import {TitleSlide} from "./slides/title.tsx";
-import {IntroSlide} from "./slides/intro.tsx";
-import {QuestionsSlide} from "./slides/questions.tsx";
-import {I18nextSlide} from "./slides/i18next.tsx";
+import { TitleSlide } from "./slides/title.tsx";
+import { IntroSlide } from "./slides/intro.tsx";
+import { QuestionsSlide } from "./slides/questions.tsx";
+import { I18nextSlide } from "./slides/i18next.tsx";
 import { FormatsSlide } from "./slides/formats.tsx";
-import {CtaSlide} from "./slides/cta.tsx";
-import {BidiSlide} from "./slides/bidi.tsx";
-import {ConclusionSlide} from "./slides/conclusion.tsx";
-import {useTranslation} from "react-i18next";
-import {TranslatingTextSlide} from "./slides/translatingText.tsx";
-import {PluginFunction} from "reveal.js";
+import { CtaSlide } from "./slides/cta.tsx";
+import { BidiSlide } from "./slides/bidi.tsx";
+import { ConclusionSlide } from "./slides/conclusion.tsx";
+import { useTranslation } from "react-i18next";
+import { TranslatingTextSlide } from "./slides/translatingText.tsx";
+import { PluginFunction } from "reveal.js";
+import { MoreInformationSlide } from "./slides/moreInformation.tsx";
 
 function App() {
-    const {i18n} = useTranslation();
+    const { i18n } = useTranslation();
 
     // Override keyboard controls so that it is possible to go through all the slides using a presentation remote
     const keyboard = {
@@ -47,15 +48,15 @@ function App() {
 
     return <div className={Styles.root} dir={i18n.dir()}>
         <RevealSlides controls={true}
-                      hash={true}
-                      controlsLayout={"bottom-right"}
-                      plugins={[RevealMarkdown, RevealZoom, RevealNotes, hl]}
-                      center={false}
-                      width={1920}
-                      height={1080}
-                      rtl={i18n.dir() == "rtl"}
-                      // @ts-expect-error Typings for keyboard are incorrect
-                      keyboard={keyboard}
+            hash={true}
+            controlsLayout={"bottom-right"}
+            plugins={[RevealMarkdown, RevealZoom, RevealNotes, hl]}
+            center={false}
+            width={1920}
+            height={1080}
+            rtl={i18n.dir() == "rtl"}
+            // @ts-expect-error Typings for keyboard are incorrect
+            keyboard={keyboard}
         >
             <TitleSlide />
             <IntroSlide />
@@ -70,18 +71,9 @@ function App() {
             <PluralsSlide />
             <FormatsSlide />
             <BidiSlide />
-            <Slide data-background-color="rgb(100, 0, 0)">
-                <h1>Some other things to think about</h1>
-                <ul>
-                    <li className="fragment">Font support</li>
-                    <li className="fragment">Sizing and designs</li>
-                    <li className="fragment">Icons</li>
-                    <li className="fragment">Eastern Arabic numbers</li>
-                {/*  If I do a slide on numbers we'll talk about the comma too  */}
-                </ul>
-            </Slide>
+            <MoreInformationSlide />
 
-            <CtaSlide/>
+            <CtaSlide />
             <ConclusionSlide />
             <QuestionsSlide />
         </RevealSlides>
