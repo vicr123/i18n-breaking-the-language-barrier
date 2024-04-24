@@ -11,6 +11,7 @@
   "TRANSLATING_TEXT": "Translating Text",
   "INTERPOLATION": "Interpolation",
   "INTERPOLATION_INTRODUCTION": "But what about user-generated or dynamic text?",
+  "INTERPOLATION_REASON": "Use one string with placeholders",
   "PLURALS": "Plurals",
   "PLURAL_INCORRECT_EXPLANATION": "Don't use different keys to interpolate counting numbers",
   "PLURAL_CORRECT_EXPLANATION": "Use one key and allow the i18n library to select the best translation",

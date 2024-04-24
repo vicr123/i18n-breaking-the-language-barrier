@@ -54,7 +54,7 @@ function App() {
                       width={1920}
                       height={1080}
                       rtl={i18n.dir() == "rtl"}
-                      // @ts-expect-error
+                      // @ts-expect-error Typings for keyboard are incorrect
                       keyboard={keyboard}
         >
             <TitleSlide />

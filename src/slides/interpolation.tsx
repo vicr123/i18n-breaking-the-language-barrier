@@ -59,6 +59,14 @@ export function InterpolationSlide() {
             {languages.map(lang => {
                     return <CodeBlock code={`"INTERPOLATION": "${i18n.getResource(lang, "demo", "INTERPOLATION").replace("<1>", "").replace("</1>", "")}"`} />
                 })}
+
+            <br />
+
+            <div className={"fragment"}>
+                <UsageExample type={"correct"} explanation={t("INTERPOLATION_REASON")}>
+                    <CodeBlock code={`t("FIXED_BUG", { name: username })`} />
+                </UsageExample>
+            </div>
         </Slide>
     </Slide>
 }

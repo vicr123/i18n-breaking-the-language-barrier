@@ -54,16 +54,12 @@ export function TranslatingTextSlide() {
                 return <>
                     <LanguageIdentifier lang={lang} />
                     <div className={Styles.split}>
-                        <div>
-                            <div>{t("FIND_A_PROPERTY", {ns: "demo"})}</div>
-                            <div>{t("APP_PRICE", {ns: "demo"})}</div>
-                            <div>{t("APP_GARAGE", {ns: "demo"})}</div>
-                        </div>
-                        <div>
-                            <CodeBlock code={`t("FIND_A_PROPERTY")`} />
-                            <CodeBlock code={`t("APP_PRICE")`} />
-                            <CodeBlock code={`t("APP_GARAGE")`} />
-                        </div>
+                        <div>{t("FIND_A_PROPERTY", {ns: "demo"})}</div>
+                        <CodeBlock code={`t("FIND_A_PROPERTY")`} />
+                        <div>{t("APP_PRICE", {ns: "demo"})}</div>
+                        <CodeBlock code={`t("APP_PRICE")`} />
+                        <div>{t("APP_GARAGE", {ns: "demo"})}</div>
+                        <CodeBlock code={`t("APP_GARAGE")`} />
                     </div>
                 </>
             })}
