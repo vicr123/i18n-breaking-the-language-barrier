@@ -1,8 +1,13 @@
-import {Slide} from "../slide.tsx";
+import { useTranslation } from "react-i18next";
+import { Slide } from "../slide.tsx";
 
 export function CtaSlide() {
+    const { t } = useTranslation();
+
     return <Slide>
-        <h1>Go forth and translate!</h1>
-        <p>A CTA for the folks that speak multiple languages</p>
+        <h1>{t("CTA_TITLE")}</h1>
+        <br />
+        <h3>{t("CTA_DESCRIPTION")}</h3>
+        <p>{t("CTA_DESCRIPTION_2")}</p>
     </Slide>
 }

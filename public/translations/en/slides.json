@@ -24,5 +24,8 @@
   "VIEW_I18NEXT": "Learn more about i18next",
   "QUESTIONS": "Questions?",
   "USAGE_INCORRECT": "Incorrect",
-  "USAGE_CORRECT": "Correct"
+  "USAGE_CORRECT": "Correct",
+  "CTA_TITLE": "Go forth and translate!",
+  "CTA_DESCRIPTION": "Speak a different language?",
+  "CTA_DESCRIPTION_2": "Lots of open source projects need you! ❤️"
 }
