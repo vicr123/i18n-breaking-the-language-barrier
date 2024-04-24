@@ -42,7 +42,7 @@ function App() {
         const hl = RevealHighlight();
         return {
             ...hl,
-            highlight: "highlightPatch"
+            id: "highlightPatch"
         }
     };
 
