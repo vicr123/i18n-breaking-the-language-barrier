@@ -9,6 +9,7 @@ export function InterpolationSlide() {
     const {t, i18n} = useTranslation();
     const tInterpolationEn = i18n.getFixedT("en", "demo");
     const tInterpolationDa = i18n.getFixedT("da", "demo");
+    const tInterpolationJa = i18n.getFixedT("ja", "demo");
 
     const languages = ["en", "nl", "de", "ja"];
 
@@ -29,7 +30,7 @@ export function InterpolationSlide() {
             <h1>{t("INTERPOLATION")}</h1>
 
             <div>
-                <LanguageIdentifier lang={"en"} />
+                <LanguageIdentifier lang={"en"}/>
             </div>
             <Trans t={tInterpolationEn}
                    i18nKey={"INTERPOLATION_2"}
@@ -43,11 +44,11 @@ export function InterpolationSlide() {
             />
 
             <UsageExample type={"incorrect"}>
-                <CodeBlock code={`t("COPY_ERROR_1") + source + t("COPY_ERROR_2") + destination`} />
+                <CodeBlock code={`t("COPY_ERROR_1") + source + t("COPY_ERROR_2") + destination`}/>
             </UsageExample>
 
             <div>
-                <LanguageIdentifier lang={"da"} />
+                <LanguageIdentifier lang={"da"}/>
             </div>
             <Trans t={tInterpolationDa}
                    i18nKey={"INTERPOLATION_2"}
@@ -59,15 +60,33 @@ export function InterpolationSlide() {
                        rt: <rt/>
                    }}
             />
+
+            <div>
+                <LanguageIdentifier lang={"ja"}/>
+            </div>
+            <Trans t={tInterpolationJa}
+                   i18nKey={"INTERPOLATION_2"}
+                   values={{source: "main.js", destination: "Project"}}
+                   components={{
+                       1: <span className={"highlight"}/>,
+                       ruby: <ruby/>,
+                       rp: <rp/>,
+                       rt: <rt/>
+                   }}
+            />
+            <aside className="notes" data-markdown={""}>
+                main.js o project ni kopii dekimasendeshita
+            </aside>
         </Slide>
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
             <p>{t("INTERPOLATION_TRANSLATION_STRINGS")}</p>
             {languages.map(lang => {
-                    return <CodeBlock code={`"INTERPOLATION": "${i18n.getResource(lang, "demo", "INTERPOLATION").replace("<1>", "").replace("</1>", "")}"`} />
-                })}
+                return <CodeBlock
+                    code={`"INTERPOLATION": "${i18n.getResource(lang, "demo", "INTERPOLATION").replace("<1>", "").replace("</1>", "")}"`}/>
+            })}
 
-            <br />
+            <br/>
 
             <div className={"fragment"}>
                 <UsageExample type={"correct"} explanation={t("INTERPOLATION_REASON")}>

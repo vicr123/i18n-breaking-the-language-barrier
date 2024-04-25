@@ -1,3 +1,4 @@
 {
-  "INTERPOLATION": "<1>{{ name }}</1>さんと<ruby>一<rp>(</rp><rt>いっ</rt><rp>)</rp></ruby><ruby>緒<rp>(</rp><rt>しょ</rt><rp>)</rp></ruby>にバグを<ruby>直<rp>(</rp><rt>なお</rt><rp>)</rp></ruby>しました"
+  "INTERPOLATION": "<1>{{ name }}</1>さんと<ruby>一<rp>(</rp><rt>いっ</rt><rp>)</rp></ruby><ruby>緒<rp>(</rp><rt>しょ</rt><rp>)</rp></ruby>にバグを<ruby>直<rp>(</rp><rt>なお</rt><rp>)</rp></ruby>しました",
+  "INTERPOLATION_2": "「<1>{{ source }}</1>」を「<1>{{ destination }}</1>」にコピーできませんでした。"
 }
