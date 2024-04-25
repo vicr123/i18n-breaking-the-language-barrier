@@ -81,7 +81,7 @@ export function InterpolationSlide() {
                 />
             </div>
             <aside className="notes" data-markdown={""}>
-                main.js o project ni kopii dekimasendeshita
+                main.js o project ni kopii de-ki-ma-sen-desh-ta
             </aside>
         </Slide>
         <Slide>
