@@ -4,7 +4,7 @@
   "I18N_QUESTION_MARK": "i18n?",
   "I18N_DESCRIPTION": "i18n is de afkorting voor \"Internationalisation\"",
   "I18N_SHORTENED_COUNT": "18 letters",
-  "I18N_INTERNATIONALISATION": "Internationalisation has no defined meaning, but most people generally understand it as the practice of adapting software to work with different languages and cultures.",
+  "I18N_INTERNATIONALISATION": "Internationalisation heeft geen duidelijke definitie, maar het wordt vaak gebruikt als het aanpassen van software om te werken met verschillende talen en voor verschillende culturen.",
   "NAME": "Naam",
   "LANGUAGE_TITLE": "Taal is genuanceerd",
   "LANGUAGE_DESCRIPTION": "Een library zal je helpen met een aantal veelvoorkomende situaties in i18n.",
