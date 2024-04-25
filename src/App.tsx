@@ -1,5 +1,5 @@
 import Styles from "./app.module.css"
-import { RevealSlides } from "react-reveal-slides"
+import { RevealSlides, RevealHandle } from "react-reveal-slides"
 
 // Make sure reveal.js is installed with npm for the following imports to work
 // Plugins
@@ -26,9 +26,12 @@ import { TranslatingTextSlide } from "./slides/translatingText.tsx";
 import { PluginFunction } from "reveal.js";
 import { MoreInformationSlide } from "./slides/moreInformation.tsx";
 import {LanguageSlide} from "./slides/language.tsx";
+import {TocSlide} from "./slides/toc.tsx";
+import {useRef} from "react";
 
 function App() {
     const { i18n } = useTranslation();
+    const revealRef = useRef<RevealHandle>(null);
 
     // Override keyboard controls so that it is possible to go through all the slides using a presentation remote
     const keyboard = {
@@ -55,6 +58,8 @@ function App() {
             width={1920}
             height={1080}
             rtl={i18n.dir() == "rtl"}
+            ref={revealRef}
+            totalTime={10 * 60}
             // @ts-expect-error Typings for keyboard are incorrect
             keyboard={keyboard}
         >
@@ -62,6 +67,7 @@ function App() {
             <IntroSlide />
             <LanguageSlide />
             <I18nextSlide />
+            <TocSlide />
 
             <TranslatingTextSlide />
             <InterpolationSlide />
