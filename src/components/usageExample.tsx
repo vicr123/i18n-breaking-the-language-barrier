@@ -2,6 +2,7 @@ import {ReactNode} from "react";
 
 import Styles from "./usageExample.module.css";
 import {useTranslation} from "react-i18next";
+import {Twemoji} from "./twemoji.tsx";
 
 export function UsageExample({children, type, explanation}: {
     children: ReactNode,
@@ -13,10 +14,16 @@ export function UsageExample({children, type, explanation}: {
     let usageText;
     switch (type) {
         case "correct":
-            usageText = `👍 ${t("USAGE_CORRECT")}${explanation ? `: ${explanation}` : ""}`;
+            usageText = <>
+                <Twemoji emoji={"👍"} />
+                {t("USAGE_CORRECT")}{explanation ? `: ${explanation}` : ""}
+            </>;
             break;
         case "incorrect":
-            usageText = `👎 ${t("USAGE_INCORRECT")}${explanation ? `: ${explanation}` : ""}`;
+            usageText = <>
+                <Twemoji emoji={"👎"} />
+                {t("USAGE_INCORRECT")}{explanation ? `: ${explanation}` : ""}
+            </>;
             break;
 
     }

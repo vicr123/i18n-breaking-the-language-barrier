@@ -17,7 +17,8 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^14.1.0",
     "react-reveal-slides": "github:bouzidanas/react-reveal-slides",
-    "reveal.js": "^5.1.0"
+    "reveal.js": "^5.1.0",
+    "twemoji": "^14.0.1"
   },
   "devDependencies": {
     "@types/luxon": "^3.4.2",

@@ -1,5 +1,6 @@
 import {useTranslation} from "react-i18next";
 import {useMemo} from "react";
+import {Twemoji} from "./twemoji.tsx";
 
 export function LanguageIdentifier({lang}: {
     lang: string
@@ -31,5 +32,5 @@ export function LanguageIdentifier({lang}: {
         type: "language"
     });
 
-    return <span dir={i18n.dir()}>{flag} {[...displayNames.of(lang)!].map((c, i) => i == 0 ? c.toUpperCase() : c).join("")}</span>;
+    return <span dir={i18n.dir()}><Twemoji emoji={flag} /> {[...displayNames.of(lang)!].map((c, i) => i == 0 ? c.toUpperCase() : c).join("")}</span>;
 }
