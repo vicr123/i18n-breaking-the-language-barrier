@@ -23,7 +23,7 @@
   "TRANSLATING_TEXT_CORRECT_EXPLANATION": "Alle gebruikerszichtbare tekst verkrijgen door middel van een vertaalfunctie",
   "INTERPOLATION": "Interpolatie",
   "INTERPOLATION_TRANSLATION_STRINGS": "Strings vertalen:",
-  "INTERPOLATION_INTRODUCTION": "Wat als tekst van gebruikers komt of van veranderen?",
+  "INTERPOLATION_INTRODUCTION": "Wat als tekst van gebruikers komt of kan veranderen?",
   "INTERPOLATION_REASON": "Gebruik een string met placeholders",
   "PLURALS": "Meervouden",
   "PLURALS_DESCRIPTION": "Meervoudregels verschillen tussen talen",
