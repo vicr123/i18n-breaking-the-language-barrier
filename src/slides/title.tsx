@@ -12,8 +12,9 @@ export function TitleSlide() {
 
         <div className={Styles.languageSwitcher}>
             <span onClick={() => i18n.changeLanguage("en")}>🇬🇧</span>
-            <span onClick={() => i18n.changeLanguage("nl")}>🇳🇱</span>
             <span onClick={() => i18n.changeLanguage("de")}>🇩🇪</span>
+            <span onClick={() => i18n.changeLanguage("ru")}>🇷🇺</span>
+            <span onClick={() => i18n.changeLanguage("nl")}>🇳🇱</span>
             <span onClick={() => i18n.changeLanguage("da")}>🇩🇰</span>
             <span onClick={() => i18n.changeLanguage("he")}>🇮🇱</span>
         </div>
