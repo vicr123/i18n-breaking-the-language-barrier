@@ -14,6 +14,7 @@ export function TitleSlide() {
             <span onClick={() => i18n.changeLanguage("en")}>🇬🇧</span>
             <span onClick={() => i18n.changeLanguage("nl")}>🇳🇱</span>
             <span onClick={() => i18n.changeLanguage("de")}>🇩🇪</span>
+            <span onClick={() => i18n.changeLanguage("da")}>🇩🇰</span>
             <span onClick={() => i18n.changeLanguage("he")}>🇮🇱</span>
         </div>
 

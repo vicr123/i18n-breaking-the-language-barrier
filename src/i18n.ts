@@ -6,7 +6,7 @@ i18n.use(HttpApi)
     .use(initReactI18next)
     .init({
         lng: "en",
-        preload: ["en", "nl", "fr", "uk", "ja", "de", "he", "vi", "ar"],
+        preload: ["en", "nl", "fr", "uk", "ja", "de", "he", "vi", "ar", "da"],
         ns: ["slides", "demo"],
         defaultNS: "slides",
         backend: {
