@@ -8,7 +8,7 @@ export function IntroSlide() {
 
     return <Slide>
         <h1>{t("I18N_QUESTION_MARK")}</h1>
-        <p>{t("I18N_WHAT_IS_I18N")}</p>
+        <p>{t("I18N_DESCRIPTION")}</p>
         <div className={`${Styles.i18nBox} fragment`}>
             <div className={Styles.i18nGrid}>
                 {[..."Internationalisation"].map(c => <span>{c}</span>)}
@@ -20,7 +20,7 @@ export function IntroSlide() {
             </div>
         </div>
 
-        <p className={"fragment"}>And what is internationalisation?</p>
+        <p className={"fragment"}>{t("I18N_INTERNATIONALISATION")}</p>
 
         <aside className="notes">
             i18n: I[nternationalisatio]n

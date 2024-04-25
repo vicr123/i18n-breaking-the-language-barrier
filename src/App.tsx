@@ -10,7 +10,6 @@ import RevealMarkdown from "reveal.js/plugin/markdown/markdown";
 import "reveal.js/plugin/highlight/monokai.css";
 import "reveal.js/dist/theme/black.css";
 
-import { Slide } from "./slide.tsx";
 import { PluralsSlide } from "./slides/plurals.tsx";
 import { InterpolationSlide } from "./slides/interpolation.tsx";
 import RevealHighlight from "reveal.js/plugin/highlight/highlight";
@@ -26,6 +25,7 @@ import { useTranslation } from "react-i18next";
 import { TranslatingTextSlide } from "./slides/translatingText.tsx";
 import { PluginFunction } from "reveal.js";
 import { MoreInformationSlide } from "./slides/moreInformation.tsx";
+import {LanguageSlide} from "./slides/language.tsx";
 
 function App() {
     const { i18n } = useTranslation();
@@ -60,10 +60,7 @@ function App() {
         >
             <TitleSlide />
             <IntroSlide />
-            <Slide data-background-color="rgb(100, 0, 0)" data-background-transition="zoom">
-                <h1>Language is nuanced</h1>
-                <p>A library will assist you with some of the more common aspects of i18n.</p>
-            </Slide>
+            <LanguageSlide />
             <I18nextSlide />
 
             <TranslatingTextSlide />
