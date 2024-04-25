@@ -14,16 +14,20 @@ export function BidiSlide() {
         return acc;
     }, {});
 
+    const displayNames = new Intl.DisplayNames([i18n.language], {
+        type: "language"
+    });
+
     return <Slide data-background-color="rgb(29, 83, 110)">
         <Slide>
             <h1>{t("BIDIRECTIONALITY")}</h1>
             <div className={"fragment"}>
-                <p>Examples of languages that read from right to left:</p>
+                <p>{t("BIDIRECTIONALITY_DESCRIPTION")}</p>
                 <ul>
-                    <li>Arabic</li>
-                    <li>Hebrew</li>
-                    <li>Persian</li>
-                    <li>Yiddish</li>
+                    <li>{displayNames.of("ar")}</li>
+                    <li>{displayNames.of("he")}</li>
+                    <li>{displayNames.of("fa")}</li>
+                    <li>{displayNames.of("yi")}</li>
                 </ul>
             </div>
         </Slide>

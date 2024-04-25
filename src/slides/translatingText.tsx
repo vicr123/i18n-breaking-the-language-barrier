@@ -21,7 +21,7 @@ export function TranslatingTextSlide() {
     return <Slide data-background-color="rgb(29, 83, 110)">
         <Slide>
             <h1>{t("TRANSLATING_TEXT")}</h1>
-            <p>How is an application actually translated?</p>
+            <p>{t("TRANSLATING_TEXT_DESCRIPTION")}</p>
             <div className={Styles.split}>
                 <div className={"fragment"}>
                     <ExamplePropertyApp lang={"en"}/>

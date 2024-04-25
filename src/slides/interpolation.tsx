@@ -55,7 +55,7 @@ export function InterpolationSlide() {
         </Slide>
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
-            <p>Translation strings:</p>
+            <p>{t("INTERPOLATION_TRANSLATION_STRINGS")}</p>
             {languages.map(lang => {
                     return <CodeBlock code={`"INTERPOLATION": "${i18n.getResource(lang, "demo", "INTERPOLATION").replace("<1>", "").replace("</1>", "")}"`} />
                 })}

@@ -15,7 +15,7 @@ export function PluralsSlide() {
     return <Slide data-background-color="rgb(29, 83, 110)">
         <Slide>
             <h1>{t("PLURALS")}</h1>
-            <p>Plural rules differ between languages</p>
+            <p>{t("PLURALS_DESCRIPTION")}</p>
             <CodeBlock code={PluralsBadExample} lineNumbers={"2"} />
         </Slide>
         <Slide>
