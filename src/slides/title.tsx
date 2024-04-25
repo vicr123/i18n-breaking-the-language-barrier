@@ -24,7 +24,7 @@ export function TitleSlide() {
         </div>
 
         <aside className="notes">
-            Speaker notes go here
+            Conclusion is on slide 13
         </aside>
     </Slide>
 }

@@ -27,18 +27,32 @@ import { PluginFunction } from "reveal.js";
 import { MoreInformationSlide } from "./slides/moreInformation.tsx";
 import {LanguageSlide} from "./slides/language.tsx";
 import {TocSlide} from "./slides/toc.tsx";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 
 function App() {
     const { i18n } = useTranslation();
     const revealRef = useRef<RevealHandle>(null);
+    const [savedSlide, setSavedSlide] = useState<number | null>(null);
 
     // Override keyboard controls so that it is possible to go through all the slides using a presentation remote
     const keyboard = {
         // Override left arrow key to always go to the previous slide (even vertically)
         37: "prev",
         // Override right arrow key to always go to the next slide (even vertically)
-        39: "next"
+        39: "next",
+        // Go to conclusion slide when C is pressed
+        67: () => {
+            const reveal = revealRef.current?.getReveal();
+            if (!reveal) return;
+
+            if (savedSlide) {
+                reveal.slide(savedSlide);
+                setSavedSlide(null);
+            } else {
+                setSavedSlide(reveal.getHorizontalSlides().indexOf(reveal.getCurrentSlide()));
+                reveal.slide(0);
+            }
+        }
     };
 
     const hl: PluginFunction = () => {
