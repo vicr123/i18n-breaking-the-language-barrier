@@ -16,6 +16,10 @@
     font-size: 20pt;
 }
 
+.appRoot:dir(ltr) {
+    text-align: left;
+}
+
 .appRoot:dir(rtl) {
     text-align: right;
 }

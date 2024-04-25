@@ -7,7 +7,7 @@ export function ExamplePropertyApp({lang}: {
     const {i18n} = useTranslation();
     const t = i18n.getFixedT(lang, "demo");
 
-    return <div className={`${Styles.appRoot}`}>
+    return <div className={`${Styles.appRoot}`} dir={i18n.dir(lang)}>
         <div className={Styles.appHeader}>
             {t("FIND_A_PROPERTY")}
         </div>

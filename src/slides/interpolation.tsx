@@ -29,51 +29,57 @@ export function InterpolationSlide() {
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
 
-            <div>
-                <LanguageIdentifier lang={"en"}/>
+            <div dir={"ltr"}>
+                <div>
+                    <LanguageIdentifier lang={"en"}/>
+                </div>
+                <Trans t={tInterpolationEn}
+                       i18nKey={"INTERPOLATION_2"}
+                       values={{source: "main.js", destination: "Project"}}
+                       components={{
+                           1: <span className={"highlight"}/>,
+                           ruby: <ruby/>,
+                           rp: <rp/>,
+                           rt: <rt/>
+                       }}
+                />
             </div>
-            <Trans t={tInterpolationEn}
-                   i18nKey={"INTERPOLATION_2"}
-                   values={{source: "main.js", destination: "Project"}}
-                   components={{
-                       1: <span className={"highlight"}/>,
-                       ruby: <ruby/>,
-                       rp: <rp/>,
-                       rt: <rt/>
-                   }}
-            />
 
             <UsageExample type={"incorrect"}>
                 <CodeBlock code={`t("COPY_ERROR_1") + source + t("COPY_ERROR_2") + destination`}/>
             </UsageExample>
 
-            <div>
-                <LanguageIdentifier lang={"da"}/>
+            <div dir={"ltr"}>
+                <div>
+                    <LanguageIdentifier lang={"da"}/>
+                </div>
+                <Trans t={tInterpolationDa}
+                       i18nKey={"INTERPOLATION_2"}
+                       values={{source: "main.js", destination: "Project"}}
+                       components={{
+                           1: <span className={"highlight"}/>,
+                           ruby: <ruby/>,
+                           rp: <rp/>,
+                           rt: <rt/>
+                       }}
+                />
             </div>
-            <Trans t={tInterpolationDa}
-                   i18nKey={"INTERPOLATION_2"}
-                   values={{source: "main.js", destination: "Project"}}
-                   components={{
-                       1: <span className={"highlight"}/>,
-                       ruby: <ruby/>,
-                       rp: <rp/>,
-                       rt: <rt/>
-                   }}
-            />
 
-            <div>
-                <LanguageIdentifier lang={"ja"}/>
+            <div dir={"ltr"}>
+                <div>
+                    <LanguageIdentifier lang={"ja"}/>
+                </div>
+                <Trans t={tInterpolationJa}
+                       i18nKey={"INTERPOLATION_2"}
+                       values={{source: "main.js", destination: "Project"}}
+                       components={{
+                           1: <span className={"highlight"}/>,
+                           ruby: <ruby/>,
+                           rp: <rp/>,
+                           rt: <rt/>
+                       }}
+                />
             </div>
-            <Trans t={tInterpolationJa}
-                   i18nKey={"INTERPOLATION_2"}
-                   values={{source: "main.js", destination: "Project"}}
-                   components={{
-                       1: <span className={"highlight"}/>,
-                       ruby: <ruby/>,
-                       rp: <rp/>,
-                       rt: <rt/>
-                   }}
-            />
             <aside className="notes" data-markdown={""}>
                 main.js o project ni kopii dekimasendeshita
             </aside>

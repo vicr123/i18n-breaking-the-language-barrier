@@ -46,7 +46,7 @@ export function BidiSlide() {
         <Slide>
             <h1>{t("BIDIRECTIONALITY")}</h1>
             <div className={Styles.split}>
-                <div dir={"rtl"}>
+                <div>
                     <ExamplePropertyApp lang={"he"}/>
                 </div>
                 <div>

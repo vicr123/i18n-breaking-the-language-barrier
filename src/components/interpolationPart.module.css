@@ -1,7 +1,7 @@
-:dir(ltr) .interpolationPart {
+.interpolationPart:dir(ltr) {
     text-align: left;
 }
 
-:dir(rtl) .interpolationPart {
+.interpolationPart:dir(rtl) {
     text-align: right;
 }

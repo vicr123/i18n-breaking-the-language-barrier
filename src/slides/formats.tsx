@@ -80,7 +80,7 @@ export function FormatsSlide() {
                     const numberFormat = new Intl.NumberFormat(lang, {maximumFractionDigits: 20});
                     return <Fragment key={lang}>
                         <LanguageIdentifier lang={lang}/>
-                        <span>2³² = {numberFormat.format(4294967296)}</span>
+                        <span>2<sup>32</sup> = {numberFormat.format(4294967296)}</span>
                         <span>π = {numberFormat.format(Math.PI)}</span>
                     </Fragment>;
                 })}

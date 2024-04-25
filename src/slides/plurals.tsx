@@ -41,7 +41,7 @@ export function PluralsSlide() {
                 <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr"}}>
                     {["en", "fr", "uk"].map(lang => {
                         const t = i18n.getFixedT(lang, "demo");
-                        return <p>{t("BOOK", {count: number})}</p>
+                        return <p dir={"ltr"}>{t("BOOK", {count: number})}</p>
                     })}
                 </div>
             </div>
