@@ -10,8 +10,6 @@ export function MoreInformationSlide() {
             <li className="fragment">{t("MORE_INFORMATION_FONT_SUPPORT")}</li>
             <li className="fragment">{t("MORE_INFORMATION_SIZING_DESIGNS")}</li>
             <li className="fragment">{t("MORE_INFORMATION_ICONS")}</li>
-            <li className="fragment">{t("MORE_INFORMATION_EASTERN_ARABIC_NUMBERS")}</li>
-            {/*  If I do a slide on numbers we'll talk about the comma too  */}
         </ul>
     </Slide>
 }

@@ -28,6 +28,10 @@
   "PLURAL_CORRECT_EXPLANATION": "Use one key and allow the i18n library to select the best translation",
   "FORMATS": "Formats",
   "FORMATS_QUESTION_FIRST_DAY_OF_WEEK": "What's the first day of the week?",
+  "FORMAT_LONG_DATE": "Long Date",
+  "FORMAT_SHORT_DATE": "Short Date",
+  "FORMAT_LARGE_NUMBER": "Large Number",
+  "FORMAT_NUMBER_WITH_DECIMALS": "Number with decimal point",
   "BIDIRECTIONALITY": "Bidirectionality",
   "FINAL_SLIDE_TITLE": "Conclusion",
   "VIEW_SLIDES_ONLINE": "View these slides online",
@@ -40,7 +44,6 @@
   "MORE_INFORMATION_FONT_SUPPORT": "Font support",
   "MORE_INFORMATION_SIZING_DESIGNS": "Sizing and designs",
   "MORE_INFORMATION_ICONS": "Icons",
-  "MORE_INFORMATION_EASTERN_ARABIC_NUMBERS": "Eastern Arabic Numbers",
   "CTA_TITLE": "Go forth and translate!",
   "CTA_DESCRIPTION": "Speak a different language and want to contribute to open source?",
   "CTA_DESCRIPTION_2": "Lots of open source projects need you! ❤️"
