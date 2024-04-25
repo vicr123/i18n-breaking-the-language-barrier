@@ -3,11 +3,12 @@ import {Slide} from "../slide.tsx";
 import {InterpolationPart} from "../components/InterpolationPart.tsx";
 import {CodeBlock} from "../components/codeblock.tsx";
 import {UsageExample} from "../components/usageExample.tsx";
+import {LanguageIdentifier} from "../components/languageIdentifier.tsx";
 
 export function InterpolationSlide() {
     const {t, i18n} = useTranslation();
     const tInterpolationEn = i18n.getFixedT("en", "demo");
-    const tInterpolationNl = i18n.getFixedT("nl", "demo");
+    const tInterpolationDa = i18n.getFixedT("da", "demo");
 
     const languages = ["en", "nl", "de", "ja"];
 
@@ -27,6 +28,9 @@ export function InterpolationSlide() {
         <Slide>
             <h1>{t("INTERPOLATION")}</h1>
 
+            <div>
+                <LanguageIdentifier lang={"en"} />
+            </div>
             <Trans t={tInterpolationEn}
                    i18nKey={"INTERPOLATION_2"}
                    values={{source: "main.js", destination: "Project"}}
@@ -42,7 +46,10 @@ export function InterpolationSlide() {
                 <CodeBlock code={`t("COPY_ERROR_1") + source + t("COPY_ERROR_2") + destination`} />
             </UsageExample>
 
-            <Trans t={tInterpolationNl}
+            <div>
+                <LanguageIdentifier lang={"da"} />
+            </div>
+            <Trans t={tInterpolationDa}
                    i18nKey={"INTERPOLATION_2"}
                    values={{source: "main.js", destination: "Project"}}
                    components={{

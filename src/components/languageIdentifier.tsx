@@ -14,6 +14,7 @@ export function LanguageIdentifier({lang}: {
             if (lang == "he") return "🇮🇱";
             if (lang == "ar") return "🇸🇦";
             if (lang == "vi") return "🇻🇳";
+            if (lang == "da") return "🇩🇰";
         }
 
         let flag = lang;
@@ -30,5 +31,5 @@ export function LanguageIdentifier({lang}: {
         type: "language"
     });
 
-    return <span dir={i18n.dir()}>{flag} {displayNames.of(lang)}</span>;
+    return <span dir={i18n.dir()}>{flag} {[...displayNames.of(lang)!].map((c, i) => i == 0 ? c.toUpperCase() : c).join("")}</span>;
 }
