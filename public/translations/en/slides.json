@@ -18,6 +18,8 @@
   "TOC_FORMATS": "Date and number formats",
   "TOC_BIDIRECTIONALITY": "Text direction",
   "TRANSLATING_TEXT": "Translating Text",
+  "TRANSLATING_TEXT_INCORRECT_EXPLANATION": "Hardcode user visible text in code",
+  "TRANSLATING_TEXT_CORRECT_EXPLANATION": "Wrap all user visible text in a call to the translation function",
   "INTERPOLATION": "Interpolation",
   "INTERPOLATION_INTRODUCTION": "But what about user-generated or dynamic text?",
   "INTERPOLATION_REASON": "Use one string with placeholders",
