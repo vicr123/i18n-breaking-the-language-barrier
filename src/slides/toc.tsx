@@ -5,7 +5,7 @@ export function TocSlide() {
     const {t} = useTranslation();
 
     return <Slide>
-        <div style={{display: "grid", gridTemplateRows: "max-content max-content max-content max-content", gridTemplateColumns: "1fr 1fr", gridAutoFlow: "row", gap: "10px"}}>
+        <div style={{display: "grid", gridTemplateRows: "max-content max-content max-content max-content", gridTemplateColumns: "1fr 1fr", gridAutoFlow: "column", gap: "10px"}}>
             <h1 style={{gridColumn: "span 2"}}>{t("TOC_TITLE")}</h1>
 
             <div>
