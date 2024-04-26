@@ -8,8 +8,8 @@ export function TitleSlide() {
     const {t, i18n} = useTranslation();
 
     return <Slide>
-        <h1>{t("I18N")}</h1>
-        <h3>{t("I18N_SUBTITLE")}</h3>
+        <h1 className={Styles.titleText}>{t("I18N")}</h1>
+        <h3 className={Styles.titleText}>{t("I18N_SUBTITLE")}</h3>
 
         <div className={Styles.languageSwitcher}>
             <span onClick={() => i18n.changeLanguage("en")}><Twemoji emoji="🇬🇧"/></span>

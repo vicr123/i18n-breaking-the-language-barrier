@@ -5,21 +5,33 @@ export function TocSlide() {
     const {t} = useTranslation();
 
     return <Slide>
-        <h1>{t("TOC_TITLE")}</h1>
+        <div style={{display: "grid", gridTemplateRows: "max-content max-content max-content max-content", gridTemplateColumns: "1fr 1fr", gridAutoFlow: "row", gap: "10px"}}>
+            <h1 style={{gridColumn: "span 2"}}>{t("TOC_TITLE")}</h1>
 
-        <h3>{t("TRANSLATING_TEXT")}</h3>
-        <p>{t("TOC_TRANSLATING_TEXT")}</p>
+            <div>
+                <h3>{t("TRANSLATING_TEXT")}</h3>
+                <p>{t("TOC_TRANSLATING_TEXT")}</p>
+            </div>
 
-        <h3>{t("INTERPOLATION")}</h3>
-        <p>{t("TOC_INTERPOLATION")}</p>
+            <div>
+                <h3>{t("INTERPOLATION")}</h3>
+                <p>{t("TOC_INTERPOLATION")}</p>
+            </div>
 
-        <h3>{t("PLURALS")}</h3>
-        <p>{t("TOC_PLURALS")}</p>
+            <div>
+                <h3>{t("PLURALS")}</h3>
+                <p>{t("TOC_PLURALS")}</p>
+            </div>
 
-        <h3>{t("FORMATS")}</h3>
-        <p>{t("TOC_FORMATS")}</p>
+            <div>
+                <h3>{t("FORMATS")}</h3>
+                <p>{t("TOC_FORMATS")}</p>
+            </div>
 
-        <h3>{t("BIDIRECTIONALITY")}</h3>
-        <p>{t("TOC_BIDIRECTIONALITY")}</p>
+            <div>
+                <h3>{t("BIDIRECTIONALITY")}</h3>
+                <p>{t("TOC_BIDIRECTIONALITY")}</p>
+            </div>
+        </div>
     </Slide>
 }
