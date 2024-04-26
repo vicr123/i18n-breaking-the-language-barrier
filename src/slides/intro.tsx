@@ -2,11 +2,21 @@ import {Slide} from "../slide.tsx";
 import {useTranslation} from "react-i18next";
 
 import Styles from "./intro.module.css";
+import {useEffect, useState} from "react";
 
 export function IntroSlide() {
     const {t, i18n} = useTranslation();
+    const [letter, setLetter] = useState(false);
 
-    const internationalisationChars = [..."Internationalisation"].map((c, i) => <span key={i}>{c}</span>);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setLetter(!letter);
+        }, 500);
+
+        return () => clearInterval(interval);
+    }, [letter]);
+
+    const internationalisationChars = [...(`Internationali${letter ? "s" : "z"}ation`)].map((c, i) => <span key={i}>{c}</span>);
     if (i18n.dir() == "rtl") internationalisationChars.reverse();
 
     return <Slide>
