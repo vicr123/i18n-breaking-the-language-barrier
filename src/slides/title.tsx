@@ -16,6 +16,7 @@ export function TitleSlide() {
             <span onClick={() => i18n.changeLanguage("de")}><Twemoji emoji="🇩🇪"/></span>
             <span onClick={() => i18n.changeLanguage("ru")}><Twemoji emoji="🇷🇺"/></span>
             <span onClick={() => i18n.changeLanguage("nl")}><Twemoji emoji="🇳🇱"/></span>
+            <span onClick={() => i18n.changeLanguage("pt-BR")}><Twemoji emoji="🇧🇷"/></span>
             <span onClick={() => i18n.changeLanguage("da")}><Twemoji emoji="🇩🇰"/></span>
             <span onClick={() => i18n.changeLanguage("he")}><Twemoji emoji="🇮🇱"/></span>
         </div>
