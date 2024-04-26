@@ -96,7 +96,7 @@ export function InterpolationSlide() {
 
             <div className={"fragment"}>
                 <UsageExample type={"correct"} explanation={t("INTERPOLATION_REASON")}>
-                    <CodeBlock code={`t("FIXED_BUG", { name: username })`} />
+                    <CodeBlock code={`t("INTERPOLATION", { name: username })`} />
                 </UsageExample>
             </div>
         </Slide>
